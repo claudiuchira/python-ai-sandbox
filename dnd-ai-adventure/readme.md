@@ -12,6 +12,17 @@ A fun, interactive AI-powered Dungeon Master built with Groq and Streamlit.
 - Classic fantasy D&D style
 - Responsive web app (works on mobile too)
 
+## Recent Improvements (June 14, 2026)
+
+- Fixed token limit errors by implementing concise side-storytelling, enabling truly infinite-length adventures
+- Added character creation (Name, Gender, and Class) at the beginning of the story
+- Improved mobile experience by replacing the need to type `start` with a Start button
+- Moved from a basic prompt-based chat to a more structured and reliable adventure experience
+- Improved conversation flow and story consistency
+- Better handling of player actions and world state
+- More stable and production-ready code
+
+
 ## 🚀 How to Run Locally
 
 1. Clone the repository:
