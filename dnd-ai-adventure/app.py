@@ -65,7 +65,7 @@ if len(st.session_state.messages) <= 1:
     with col2:
         gender_input = st.text_input(
             "Gender",
-            placeholder="Male, Female, Non-binary, Dragon, Ghost...",
+            placeholder="Male, Female, Non-binary or anything you want...",
             key="gender_input"
         )
 
