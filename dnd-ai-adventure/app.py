@@ -106,7 +106,7 @@ if len(st.session_state.messages) <= 1:
                 with st.spinner("The Dungeon Master is thinking..."):
                     try:
                         response = client.chat.completions.create(
-                            model="llama-3.1-8b-instant",
+                            model="openai/gpt-oss-20b",
                             messages=st.session_state.messages,
                             temperature=0.85,
                             max_tokens=700
@@ -147,7 +147,7 @@ if prompt := st.chat_input("What do you do?"):
                     messages_to_send.extend(st.session_state.messages[-5:])
                 
                 response = client.chat.completions.create(
-                    model="llama-3.1-8b-instant",
+                    model="openai/gpt-oss-20b",
                     messages=messages_to_send,
                     temperature=0.85,
                     max_tokens=700
@@ -192,7 +192,7 @@ Return ONLY the structured summary. No extra text."""}
                 ]
                 
                 summary_response = client.chat.completions.create(
-                    model="llama-3.1-8b-instant",
+                    model="openai/gpt-oss-20b",
                     messages=summary_prompt,
                     temperature=0.65,
                     max_tokens=550
